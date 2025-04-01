@@ -1,0 +1,40 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\dev\\lib_main\\unreal\\ananke2\\plugins\\anankecore\\anankecore\\source\\anankecoreruntime\\private\\controller\\anankeplayercontroller.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\dev\\lib_main\\unreal\\ananke2\\intermediate\\build\\win64\\x64\\ananke2editor\\development\\unrealed\\sharedpch.unrealed.project.valapi.cpp20.inclorderoldest.h.pch",
+        "Includes": [
+            "c:\\dev\\lib_main\\unreal\\ananke2\\plugins\\anankecore\\anankecore\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\anankecoreruntime\\definitions.anankecoreruntime.h",
+            "c:\\dev\\lib_main\\unreal\\ananke2\\plugins\\anankecore\\anankecore\\source\\anankecoreruntime\\public\\controller\\anankeplayercontroller.h",
+            "c:\\dev\\lib_main\\unreal\\ananke2\\plugins\\anankecore\\anankecore\\intermediate\\build\\win64\\unrealeditor\\inc\\anankecoreruntime\\uht\\anankeplayercontroller.generated.h",
+            "c:\\dev\\lib_main\\unreal\\ananke2\\plugins\\anankecore\\anankecore\\source\\anankecoreruntime\\public\\anankecoreloggingdefs.h",
+            "c:\\program files\\epic games\\ue_5.4\\engine\\source\\runtime\\headmounteddisplay\\public\\ixrtrackingsystem.h",
+            "c:\\program files\\epic games\\ue_5.4\\engine\\source\\runtime\\headmounteddisplay\\public\\headmounteddisplaytypes.h",
+            "c:\\program files\\epic games\\ue_5.4\\engine\\source\\runtime\\headmounteddisplay\\public\\imotioncontroller.h",
+            "c:\\program files\\epic games\\ue_5.4\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\headmounteddisplay\\uht\\imotioncontroller.generated.h",
+            "c:\\program files\\epic games\\ue_5.4\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\headmounteddisplay\\uht\\headmounteddisplaytypes.generated.h",
+            "c:\\program files\\epic games\\ue_5.4\\engine\\source\\runtime\\headmounteddisplay\\public\\iidentifiablexrdevice.h",
+            "c:\\program files\\epic games\\ue_5.4\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\headmounteddisplay\\uht\\iidentifiablexrdevice.generated.h",
+            "c:\\program files\\epic games\\ue_5.4\\engine\\source\\runtime\\headmounteddisplay\\public\\ixrinput.h",
+            "c:\\program files\\epic games\\ue_5.4\\engine\\source\\runtime\\headmounteddisplay\\public\\ixrcamera.h",
+            "c:\\dev\\lib_main\\unreal\\ananke2\\plugins\\anankecore\\anankecore\\source\\anankecoreruntime\\public\\character\\anankeplayercharacter.h",
+            "c:\\dev\\lib_main\\unreal\\ananke2\\plugins\\anankecore\\anankecore\\source\\anankecoreruntime\\public\\character\\anankecharacter.h",
+            "c:\\program files\\epic games\\ue_5.4\\engine\\source\\runtime\\engine\\classes\\gameframework\\character.h",
+            "c:\\program files\\epic games\\ue_5.4\\engine\\source\\runtime\\engine\\classes\\gameframework\\charactermovementreplication.h",
+            "c:\\program files\\epic games\\ue_5.4\\engine\\source\\runtime\\experimental\\iris\\core\\public\\iris\\serialization\\irisobjectreferencepackagemap.h",
+            "c:\\program files\\epic games\\ue_5.4\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\iriscore\\uht\\irisobjectreferencepackagemap.generated.h",
+            "c:\\program files\\epic games\\ue_5.4\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\charactermovementreplication.generated.h",
+            "c:\\program files\\epic games\\ue_5.4\\engine\\source\\runtime\\engine\\classes\\gameframework\\rootmotionsource.h",
+            "c:\\program files\\epic games\\ue_5.4\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\rootmotionsource.generated.h",
+            "c:\\program files\\epic games\\ue_5.4\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\character.generated.h",
+            "c:\\dev\\lib_main\\unreal\\ananke2\\plugins\\anankecore\\anankecore\\intermediate\\build\\win64\\unrealeditor\\inc\\anankecoreruntime\\uht\\anankecharacter.generated.h",
+            "c:\\dev\\lib_main\\unreal\\ananke2\\plugins\\anankecore\\anankecore\\intermediate\\build\\win64\\unrealeditor\\inc\\anankecoreruntime\\uht\\anankeplayercharacter.generated.h",
+            "c:\\dev\\lib_main\\unreal\\ananke2\\plugins\\anankecore\\anankecore\\source\\anankecoreruntime\\public\\macros\\anankecoreloggingmacros.h",
+            "c:\\dev\\lib_main\\unreal\\ananke2\\plugins\\anankecore\\anankecore\\source\\anankecoreruntime\\public\\subsystems\\anankeloggingsubsystem.h",
+            "c:\\dev\\lib_main\\unreal\\ananke2\\plugins\\anankecore\\anankecore\\intermediate\\build\\win64\\unrealeditor\\inc\\anankecoreruntime\\uht\\anankeloggingsubsystem.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

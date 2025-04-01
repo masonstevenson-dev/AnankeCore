@@ -1,0 +1,17 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\dev\\lib_main\\unreal\\ananke2\\plugins\\anankecore\\anankecore\\intermediate\\build\\win64\\unrealeditor\\inc\\anankecoreruntime\\uht\\anankeboundingspline.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\dev\\lib_main\\unreal\\ananke2\\intermediate\\build\\win64\\x64\\ananke2editor\\development\\unrealed\\sharedpch.unrealed.project.valapi.cpp20.inclorderoldest.h.pch",
+        "Includes": [
+            "c:\\dev\\lib_main\\unreal\\ananke2\\plugins\\anankecore\\anankecore\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\anankecoreruntime\\definitions.anankecoreruntime.h",
+            "c:\\dev\\lib_main\\unreal\\ananke2\\plugins\\anankecore\\anankecore\\source\\anankecoreruntime\\public\\actor\\anankeboundingspline.h",
+            "c:\\dev\\lib_main\\unreal\\ananke2\\plugins\\anankecore\\anankecore\\source\\anankecoreruntime\\public\\actor\\anankesplineactor.h",
+            "c:\\dev\\lib_main\\unreal\\ananke2\\plugins\\anankecore\\anankecore\\intermediate\\build\\win64\\unrealeditor\\inc\\anankecoreruntime\\uht\\anankesplineactor.generated.h",
+            "c:\\dev\\lib_main\\unreal\\ananke2\\plugins\\anankecore\\anankecore\\intermediate\\build\\win64\\unrealeditor\\inc\\anankecoreruntime\\uht\\anankeboundingspline.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

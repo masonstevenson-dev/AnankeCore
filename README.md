@@ -36,7 +36,7 @@ All logs are passed through the AnankeLoggingSubsystem, which gives the added be
 
 For all log types, log macros are complied out for shipping builds (UE_BUILD_SHIPPING).
 
-
+<br>
 
 #### Recommended Usage
 
@@ -102,7 +102,9 @@ public class YourPluginRuntime : ModuleRules
 }
 ```
 
+<br>
 
+<br>
 
 #### Log Macros
 
@@ -110,41 +112,41 @@ public class YourPluginRuntime : ModuleRules
 
 Works just like UE_LOG but logs additional info about the line where this was logged. 
 
-
+<br>
 
 Example Log:
 
 `YourLogCategory:  [Function=USomeObject::SomeFunction]YourFile.cpp:15 This is an example log.`
 
-
+<br>
 
 ##### ANANKE_LOG_OBJECT(TargetObject, CategoryName, Verbosity, Format, ...)
 
 Works similarly to ANANKE_LOG, but additionally records a target UOBJECT and its netmode, if available.
 
-
+<br>
 
 Example Log:
 
 `YourLogCategory: Error:  [NetMode=Server][Object=SomeObject_0][Function=USomeObject::SomeFunction]YourFile.cpp:15 This is an example log.`
 
-
+<br>
 
 ##### ANANKE_LOG_PERIODIC(Verbosity, LogMessage, LogRate)
 
 ANANKE_LOG_PERIODIC is a rate-limited log, meaning that log messages are collected within a certain time window but not actually logged. So for example, if a log message is set to log every 1 second, and it gets called 100 times within one second, only a single log with "count=100" will be published to the console/screen.
 
-
+<br>
 
 Currently, periodic logs are only available while in game or PIE. All log messages are logged to the same category (LogAnankePeriodic).
 
-
+<br>
 
 Example Log:
 
 `LogAnankePeriodic:  [Function=USomeObject::SomeFunction]YourFile.cpp:15  PERIODIC_LOG(count=26): Your periodic log!`
 
-
+<br>
 
 ### TestSuiteTemplate.cpp
 

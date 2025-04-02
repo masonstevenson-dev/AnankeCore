@@ -60,7 +60,7 @@
  * Works just like UE_LOG but logs additional info about the line where this was logged.
  *
  * Example Log:
- * [2023.01.01-00.00.00:000][  0] YourLogCategory: your_file.cpp:11 This is an example log.
+ * YourLogCategory:  [Function=USomeObject::SomeFunction]YourFile.cpp:15 This is an example log.
  *
  * @param CategoryName  name of the logging category
  * @param Verbosity     verbosity level to test against
@@ -92,7 +92,7 @@ else {																							\
  * Works similarly to ANANKE_LOG, but additionally records a target UOBJECT and its netmode, if available.
  *
  * Example Log:
- * [2023.01.01-00.00.00:000][  0] YourLogCategory: [NetMode=Server][Object=YourObject]your_file.cpp:11 This is an example log.
+ * YourLogCategory: Error:  [NetMode=Server][Object=SomeObject_0][Function=USomeObject::SomeFunction]YourFile.cpp:15 This is an example log.
  *
  * @param TargetObject  object to log
  * @param CategoryName  name of the logging category
@@ -125,16 +125,16 @@ else {																												\
 /**
  * Adds rate-limited logs.
  *
- * Note that this macro only stores the log. It will be logged later via the AnankePeriodicLogTicker. Unfortunately,
- * there is no way to store the log category without using the deprecated UE_LOG_REF, so these logs will all be logged
- * using the 'LogAnankePeriodic' category.
+ * Note that this macro only stores the log. It will be logged later via the AnankePeriodicLogTicker, which only ticks
+ * in game or PIE. Unfortunately, there is no way to store the log category without using the deprecated UE_LOG_REF,
+ * so these logs will all be logged using the 'LogAnankePeriodic' category.
  *
  * Example Log:
- * [2023.01.01-00.00.00:000][  0] LogAnankePeriodic: your_file.cpp:11 PERIODIC_LOG(count=37): This is a periodic log.
+ * LogAnankePeriodic:  [Function=USomeObject::SomeFunction]YourFile.cpp:15  PERIODIC_LOG(count=26): Your periodic log!
  *
- * @param CategoryName  name of the logging category
  * @param Verbosity     verbosity level to test against
- * @param Format        format text
+ * @param LogMessage    the message to log
+ * @param LogRate		the rate of the log, in seconds
  */
 #if UE_BUILD_SHIPPING
 #define ANANKE_LOG_PERIODIC(Verbosity, LogMessage, LogRate) ;

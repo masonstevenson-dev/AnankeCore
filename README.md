@@ -104,8 +104,6 @@ public class YourPluginRuntime : ModuleRules
 
 <br>
 
-<br>
-
 #### Log Macros
 
 ##### ANANKE_LOG(CategoryName, Verbosity, Format, ...)

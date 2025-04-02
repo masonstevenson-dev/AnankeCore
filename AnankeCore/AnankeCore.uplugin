@@ -7,7 +7,7 @@
 	"Description": "Core library for my UE projects.",
 	"Category": "Ananke",
 	"CreatedBy": "Mason Stevenson",
-	"CreatedByURL": "http://masonstevenson.dev",
+	"CreatedByURL": "https://masonstevenson.dev",
 	"DocsURL": "",
 	"MarketplaceURL": "",
 	"SupportURL": "",
@@ -19,16 +19,6 @@
 			"Name": "AnankeCoreRuntime",
 			"Type": "Runtime",
 			"LoadingPhase": "Default"
-		}
-	],
-	"Plugins": [
-		{
-			"Name": "EnhancedInput",
-			"Enabled": true
-		},
-		{
-			"Name": "LyraCamera",
-			"Enabled": true
 		}
 	]
 }

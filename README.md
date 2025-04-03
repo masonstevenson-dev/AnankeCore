@@ -75,36 +75,36 @@ You can set up your Build.cs file to toggle on/off the custom logging functional
 ```c#
 public class YourPluginRuntime : ModuleRules
 {
-	public YourPluginRuntime(ReadOnlyTargetRules Target) : base(Target)
-	{
+    public YourPluginRuntime(ReadOnlyTargetRules Target) : base(Target)
+    {
         // Set to false to revert back to UE_LOG
-		bUseAnankeLog = true;
-		
+        bUseAnankeLog = true;
+        
         // ... 
 
-		if (bUseAnankeLog)
-		{
-			PublicDefinitions.Add("WITH_ANANKE_LOG_YOUR_PLUGIN=1");
-		}
-		else
-		{
-			PublicDefinitions.Add("WITH_ANANKE_LOG_YOUR_PLUGIN=0");
-		}
+        if (bUseAnankeLog)
+        {
+            PublicDefinitions.Add("WITH_ANANKE_LOG_YOUR_PLUGIN=1");
+        }
+        else
+        {
+            PublicDefinitions.Add("WITH_ANANKE_LOG_YOUR_PLUGIN=0");
+        }
         
         // ...
 
-		if (bUseAnankeLog)
-		{
-			PublicDependencyModuleNames.AddRange(
-				new string[]
-				{
-					"AnankeCoreRuntime",
-				}
-			);
-		}
-	}
-	
-	public bool bUseAnankeLog { get; set; }
+        if (bUseAnankeLog)
+        {
+            PublicDependencyModuleNames.AddRange(
+                new string[]
+                {
+                    "AnankeCoreRuntime",
+                }
+            );
+        }
+    }
+    
+    public bool bUseAnankeLog { get; set; }
 }
 ```
 

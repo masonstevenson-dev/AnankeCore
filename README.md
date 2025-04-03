@@ -1,5 +1,11 @@
 # Ananke Core
 
+Author: Mason Stevenson
+
+[https://masonstevenson.dev](https://masonstevenson.dev/)
+
+<br>
+
 Ananke Core is a "grab bag" plugin of various tools and base classes used in my other projects. Currently it is used in the following projects:
 
 * Mantle (required)

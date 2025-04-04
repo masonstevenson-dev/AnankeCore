@@ -8,11 +8,17 @@ Author: Mason Stevenson
 
 Ananke Core is a "grab bag" plugin of various tools and base classes used in my other projects. Currently it is used in the following projects:
 
-* Mantle (required)
-* HexEngine (enabled by default, but you can disable it using the `bUseAnankeLog` flag in the plugin's Build.cs files)
-* AutomationGraph (enabled by default, but you can disable it using the `bUseAnankeLog` flag in the plugin's Build.cs files)
+* [Mantle ECS](https://github.com/masonstevenson-dev/Mantle) (required)
+* [HexEngine](https://github.com/masonstevenson-dev/HexEngine) (enabled by default, but you can disable it using the `bUseAnankeLog` flag in the plugin's Build.cs files)
+* [AutomationGraph](https://github.com/masonstevenson-dev/AutomationGraph) (enabled by default, but you can disable it using the `bUseAnankeLog` flag in the plugin's Build.cs files)
 
+<br>
 
+## Supported Engine Versions
+
+AnankeCore currently supports **UE 5.4.**
+
+<br>
 
 ## Installation
 

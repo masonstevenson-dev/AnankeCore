@@ -93,7 +93,7 @@ public:
 		REGISTER_TEST_SUITE_FN(Test_Example);
 	}
 	
-	virtual uint32 GetTestFlags() const override
+	virtual EAutomationTestFlags GetTestFlags() const override
 	{
 		// TODO(Author): Set your test flags here.
 		return EAutomationTestFlags::EditorContext | EAutomationTestFlags::ProductFilter;

@@ -36,6 +36,8 @@
 AAnankeRibbonSpline::AAnankeRibbonSpline(const FObjectInitializer& Initializer): Super(Initializer)
 {
 	SplineComponent->SceneProxyMode = EAnankeSplineComponentProxyMode::Custom;
+#if WITH_EDITORONLY_DATA
 	SplineComponent->bShouldVisualizeScale = true;
 	SplineComponent->ScaleVisualizationWidth = 50.0f; // x2 = 1m wide
+#endif
 }

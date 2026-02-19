@@ -115,7 +115,9 @@ public:
 	virtual bool ShouldRecreateProxyOnUpdateTransform() const override { return true; }
 #endif
 
+#if WITH_EDITOR
 	virtual void PostEditChangeProperty(FPropertyChangedEvent& PropertyChangedEvent) override;
+#endif
 
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, meta=(InlineEditConditionToggle=true))
 	bool bUseUniformWidth = false;

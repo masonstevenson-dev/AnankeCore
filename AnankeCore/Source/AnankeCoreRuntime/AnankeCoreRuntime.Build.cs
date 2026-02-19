@@ -75,9 +75,17 @@ public class AnankeCoreRuntime : ModuleRules
 				"Engine",
 				"Slate",
 				"SlateCore",
-				"UnrealEd",
-				"VirtualTexturingEditor",
 			});
+
+		if (Target.Type == TargetType.Editor)
+		{
+			PrivateDependencyModuleNames.AddRange(
+				new string[]
+				{
+					"UnrealEd",
+					"VirtualTexturingEditor",
+				});
+		}
 		
 		
 		DynamicallyLoadedModuleNames.AddRange(

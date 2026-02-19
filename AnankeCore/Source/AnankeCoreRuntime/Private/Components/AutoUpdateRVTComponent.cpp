@@ -31,7 +31,9 @@
 
 #include "Components/AutoUpdateRVTComponent.h"
 
+#if WITH_EDITOR
 #include "RuntimeVirtualTextureSetBounds.h"
+#endif
 
 #if WITH_EDITOR
 void UAutoUpdateRVTComponent::PostEditChangeProperty(FPropertyChangedEvent& PropertyChangedEvent)

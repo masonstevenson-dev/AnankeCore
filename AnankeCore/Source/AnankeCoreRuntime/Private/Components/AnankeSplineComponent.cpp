@@ -43,9 +43,11 @@ FAnankeSplineProxy::FAnankeSplineProxy(const UAnankeSplineComponent* InComponent
 	SplinePositionInfo = InComponent->SplineCurves.Position;
 	SplineRotationInfo = InComponent->SplineCurves.Rotation;
 	SplineScaleInfo = InComponent->SplineCurves.Scale;
+#if WITH_EDITORONLY_DATA
 	LineColor = InComponent->EditorUnselectedSplineSegmentColor;
 	ScaleVisualizationWidth = InComponent->ScaleVisualizationWidth;
 	bShouldVisualizeScale = InComponent->bShouldVisualizeScale;
+#endif
 	ComponentTransform = InComponent->GetComponentTransform();
 	bClosedLoop = InComponent->IsClosedLoop();
 }
@@ -341,11 +343,13 @@ UAnankeSplineComponent::UAnankeSplineComponent(const FObjectInitializer& Initial
 
 	UpdateSpline();
 
+#if WITH_EDITORONLY_DATA
 	// See base class for rationale on this section.
 	SplineInfo_DEPRECATED = SplineCurves.Position;
 	SplineRotInfo_DEPRECATED = SplineCurves.Rotation;
 	SplineScaleInfo_DEPRECATED = SplineCurves.Scale;
 	SplineReparamTable_DEPRECATED = SplineCurves.ReparamTable;
+#endif
 }
 
 
@@ -370,6 +374,7 @@ FPrimitiveSceneProxy* UAnankeSplineComponent::CreateSceneProxy()
 }
 #endif
 
+#if WITH_EDITOR
 void UAnankeSplineComponent::PostEditChangeProperty(FPropertyChangedEvent& PropertyChangedEvent)
 {
 	Super::PostEditChangeProperty(PropertyChangedEvent);
@@ -382,6 +387,7 @@ void UAnankeSplineComponent::PostEditChangeProperty(FPropertyChangedEvent& Prope
 		}
 	}
 }
+#endif
 
 void UAnankeSplineComponent::InitSpline()
 {

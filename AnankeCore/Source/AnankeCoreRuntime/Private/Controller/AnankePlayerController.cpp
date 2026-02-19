@@ -33,8 +33,8 @@
 
 #include "AnankeCoreLoggingDefs.h"
 #include "Engine/Engine.h"
-#include "IXRTrackingSystem.h"
-#include "IXRCamera.h"
+// #include "IXRTrackingSystem.h"
+// #include "IXRCamera.h"
 #include "Character/AnankePlayerCharacter.h"
 #include "Macros/AnankeCoreLoggingMacros.h"
 
@@ -59,6 +59,8 @@ void AAnankePlayerController::UpdateRotation(float DeltaTime)
 	AActor* ViewTarget = GetViewTarget();
 	if (!PlayerCameraManager || !ViewTarget || !ViewTarget->HasActiveCameraComponent() || ViewTarget->HasActivePawnControlCameraComponent())
 	{
+		// Removing IXR stuff for now. It breaks server builds.
+		/*
 		if (IsLocalPlayerController() && GEngine->XRSystem.IsValid() && GetWorld() != nullptr && GEngine->XRSystem->IsHeadTrackingAllowedForWorld(*GetWorld()))
 		{
 			auto XRCamera = GEngine->XRSystem->GetXRCamera();
@@ -66,7 +68,7 @@ void AAnankePlayerController::UpdateRotation(float DeltaTime)
 			{
 				XRCamera->ApplyHMDRotation(this, ViewRotation);
 			}
-		}
+		}*/
 	}
 
 	SetControlRotation(ViewRotation);
@@ -95,12 +97,9 @@ void AAnankePlayerController::SetPawnRotation(APawn* InPawn, FRotator ViewRotati
 		bool bWasSlowTurning = bIsSlowTurning;
 		bIsSlowTurning = true;
 		TurnAroundTime = 0.0f;
-
-		//ANANKE_LOG_OBJECT(this, LogAnankeCore, Warning, TEXT("********************"));
 		
 		if (!bWasSlowTurning)
 		{
-			// ANANKE_LOG_OBJECT(this, LogAnankeCore, Warning, TEXT("$$$$$$$$$$$$$$$$"));
 			return;
 		}
 	}

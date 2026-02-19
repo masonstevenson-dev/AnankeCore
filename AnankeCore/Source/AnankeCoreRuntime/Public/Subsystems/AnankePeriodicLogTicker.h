@@ -30,7 +30,7 @@
 // ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 #pragma once
-#include "Stats/Stats2.h"
+#include "Stats/Stats.h"
 
 #include "AnankePeriodicLogTicker.generated.h"
 

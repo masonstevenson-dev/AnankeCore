@@ -46,3 +46,8 @@ void AAnankeCharacter::JumpCompleted()
 {
 	StopJumping();
 }
+
+void AAnankeCharacter::ComponentBeginPlay(UActorComponent* NewComponent)
+{
+	BP_ComponentBeginPlay(NewComponent);
+}

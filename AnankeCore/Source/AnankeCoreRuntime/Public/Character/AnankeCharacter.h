@@ -51,4 +51,9 @@ public:
 
 	UFUNCTION(BlueprintCallable)
 	virtual void JumpCompleted();
+	
+	virtual void ComponentBeginPlay(UActorComponent* NewComponent);
+
+	UFUNCTION(BlueprintImplementableEvent, meta = (DisplayName = "ComponentBeginPlay"))
+	void BP_ComponentBeginPlay(UActorComponent* NewComponent);
 };

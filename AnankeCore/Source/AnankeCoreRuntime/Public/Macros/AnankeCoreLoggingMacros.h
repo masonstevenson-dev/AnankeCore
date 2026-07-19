@@ -31,6 +31,7 @@
 
 #pragma once
 
+#include "Engine/Engine.h"
 #include "Subsystems/AnankeLoggingSubsystem.h"
 
 // See ANANKE_LOG below. This macro is still used in situations when the AnankeLoggingSubsystem is not available.
